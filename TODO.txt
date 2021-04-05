@@ -1,0 +1,2 @@
+* Create a new branch for the first page create a page that welcomes user
+but nothing fancy. Make a module css. and merge that with the main branch
