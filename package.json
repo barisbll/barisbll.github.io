@@ -1,0 +1,22 @@
+{
+  "name": "barisbll.github.io",
+  "version": "1.0.0",
+  "description": "Personal website hosted by github pages",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barisbll/barisbll.github.io.git"
+  },
+  "author": "Baris Balli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barisbll/barisbll.github.io/issues"
+  },
+  "homepage": "https://github.com/barisbll/barisbll.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
