@@ -1,0 +1,3 @@
+[submodule "deneme"]
+	path = deneme
+	url = https://github.com/barisbll/deneme.git
