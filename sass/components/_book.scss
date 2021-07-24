@@ -1,0 +1,133 @@
+.book {
+    border: 1rem solid black;
+    background-image: linear-gradient(105deg, $color-white 0%, $color-white 50%, $color-black 50%);
+    position: relative;
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(105deg, $color-white 0%, $color-white 100%);
+        height: 57rem;
+    }
+
+    @media  (max-width: 390px) {
+        height: 67rem;
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-port) { 
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.form {
+
+    @include respond(tab-port) {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    &__group {
+        vertical-align: middle !important;
+    }
+
+    &__label {
+        font-size: 1.6rem;
+        font-weight: 700;
+        opacity: 1;
+        transition: all .2s ease;
+
+        @include respond(tab-land) {
+            display: block;
+        }
+
+        &__text-area {
+            display: block;
+        }
+    }
+
+    &__input {
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        border: .5rem solid black;
+        max-width: 28.9rem;
+
+        @include respond(tab-land) {
+            max-width: 27.1rem;
+        }
+
+        &:focus {
+            outline: none;
+            background-color: $color-black;
+            color: $color-white;
+        }
+
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__text-area:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+
+    &__text-area {
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        border: .5rem solid black;
+        resize: none;
+        max-width: 28.9rem;
+        
+
+        &:focus {
+            outline: none;
+            background-color: $color-black;
+            color: $color-white;
+        }
+
+    }
+
+    &__btn {
+        font-size: 5rem;
+        font-family: inherit;
+        background-color: $color-white;
+        color: $color-black;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        transition: all .1s ease;
+
+        @include respond(tab-port) {
+            position: relative;
+            right: 0;
+            bottom: 0;
+        }
+
+        &:hover {
+            background-color: $color-black;
+            border: .5rem solid $color-white;
+            color: $color-white;
+        }
+
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}

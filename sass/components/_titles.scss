@@ -1,0 +1,11 @@
+.black-title-container {
+    
+    display: block;
+    &__title {
+        
+        text-align: center;
+        font-size: 5.5rem;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,68 @@
+.footer {
+    padding: 14rem 0;
+    background-color: $color-black;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+
+    @include respond(tab-port) {
+        text-align: center;
+        padding-bottom: 4rem; 
+    }
+
+    &__row {
+        @include clearfix;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 4rem;
+
+        @include respond(tab-port) {
+            position: relative;
+        }
+    }
+
+    &__col-1-of-4 {
+        float: left;
+
+        @include respond(tab-port) {
+            @include clearfix;
+            float: none;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &:not(:last-child) {
+            margin-right: $footer-gutter-horizontal;
+            @include respond(tab-port) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__box {
+
+        position: absolute;
+        bottom: 4rem;
+        right: 0;
+        color: $color-white;
+
+        @include respond(tab-port) {
+            position: relative;
+            bottom: 0;
+
+        }
+        
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__paragraph {
+            font-size: 2rem;
+        }
+    }
+
+    
+    
+}

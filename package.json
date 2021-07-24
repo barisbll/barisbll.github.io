@@ -1,22 +1,27 @@
 {
-  "name": "barisbll.github.io",
+  "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "Personal website hosted by github pages",
-  "main": "script.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/barisbll/barisbll.github.io.git"
-  },
-  "author": "Baris Balli",
+  "author": "barisbll",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/barisbll/barisbll.github.io/issues"
-  },
-  "homepage": "https://github.com/barisbll/barisbll.github.io#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "autoprefixer": "^10.3.1",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }

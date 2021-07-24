@@ -1,0 +1,22 @@
+.small-info {
+    text-align: center;
+    background-color: $color-black;
+    color: $color-white;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding-bottom: 3rem;
+
+        @include respond(phone) {
+            padding: 0 4rem;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        padding: 0 10rem ;
+    }
+}

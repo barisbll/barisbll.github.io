@@ -6,11 +6,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <title>Barisbll</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <div class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="#section-testimonies" class="navigation__link">Testimonies</a></li>
+                <li class="navigation__item"><a href="#section-projects" class="navigation__link">Projects</a></li>
+                <li class="navigation__item"><a href="#section-book" class="navigation__link">Send a Mail</a></li>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <header class="header u-padding-body">
+        <div class="header__container__title">
+            <h1 class="header__title">
+                <span class="header__span">Hello</span>
+                <span class="header__span">World!</span>
+            </h1>
+        </div>
+        <div class="header__container__paragraph">
+            <p class="header__paragraph">I'm Barış a 
+                <a href="#" class="link link__underline-effect">developer</a>, 
+                <a href="#" class="link link__underline-effect">polyglot</a>, 
+                <a href="#" class="link link__underline-effect">student</a>
+            </p>
+        </div>
+        
+        <a class="btn btn-black u-margin-top-big header__btn" href="#section-skills">Check out &rarr;</a>
+    </header>
+
+    <main class="main">
+
+        <section class="small-info">
+            <h1 class="small-info__title">Nice to meet you by the way</h1>
+            <p class="small-info__paragraph">
+                Who am I? Let me give you a small summary. I was born in 1998 in Istanbul as the son of an entrepreneur and an art teacher. I was raised in a middle-class Turkish family. When I became 7 we moved to a small Turkish city called Aksehir. I finished middle and high school there. I went to the university in Izmir. I studied economics for 3 years but then drop it out to focus on my old passion, computers. Furthermore, I went to Poland to study Computer Science. I am currently a computer science student at Wroclaw University of Science and Technology.
+            </p>
+
+        </section>
+
+        <section class="section-skills" id="section-skills">
+
+            <div class="black-title-container u-margin-bottom-small">
+                <h1 class="black-title-container__title">Some Stuff That I Do</h1>
+            </div>
+
+             <div class="row card-light-container">
+                <div class="col-1-of-3-united">
+                    <div class="card-light">
+                        <div class="card-light__header">
+                            <i class="code card-light__header__icon"></i>
+                            <h3 class="card-light__header__title">Software Engineering</h3>
+                            <p class="card-light__header__paragraph u-margin-top-mini">
+                                I learned Software Engineering at school. I had lessons for all computer science paths, and I made a lot of projects while studying. from linux to AI and from mobile development to databases. 
+                            </p>
+                        </div>
+                        <div class="card-light__list">
+                            <ul class="card-light__list__ul">
+                                <li class="card-light__list__ul__item">Phyton</li>
+                                <li class="card-light__list__ul__item">Linux</li>
+                                <li class="card-light__list__ul__item">Sql</li>
+                                <li class="card-light__list__ul__item">Machine Learning</li>
+                                <li class="card-light__list__ul__item">Java OOP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3-united">
+                    <div class="card-light">
+                        <div class="card-light__header">
+                            <i class="react card-light__header__icon"></i>
+                            <h3 class="card-light__header__title">Front-end Development</h3>
+                            <p class="card-light__header__paragraph u-margin-top-mini">
+                                I learned Front-end Development myself from many online sources. I studied it during my holidays (Christmas break, summer break). Not only that, but I made many projects during this limited time.
+                            </p>
+                        </div>
+                        <div class="card-light__list">
+                            <ul class="card-light__list__ul">
+                                <li class="card-light__list__ul__item">Html/CSS</li>
+                                <li class="card-light__list__ul__item">Javascript</li>
+                                <li class="card-light__list__ul__item">Sass</li>
+                                <li class="card-light__list__ul__item">React & Redux</li>
+                                <li class="card-light__list__ul__item">Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3-united">
+                    <div class="card-light">
+                        <div class="card-light__header">
+                            <i class="language card-light__header__icon"></i>
+                            <h3 class="card-light__header__title">Languages</h3>
+                            <p class="card-light__header__paragraph u-margin-top-mini">
+                                Languages were always lying on my heart. After learning English in high school,  I wanted to move my interest to the next level. I learned all other languages using online resources.
+                            </p>
+                        </div>
+                        <div class="card-light__list">
+                            <ul class="card-light__list__ul">
+                                <li class="card-light__list__ul__item">English</li>
+                                <li class="card-light__list__ul__item">Polish</li>
+                                <li class="card-light__list__ul__item">Spanish</li>
+                                <li class="card-light__list__ul__item">French</li>
+                                <li class="card-light__list__ul__item">Turkish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="section-testimonies" id="section-testimonies">
+            
+            <div class="black-title-container u-margin-bottom-small">
+                <h1 class="black-title-container__title">Testimonies</h1>
+            </div>
+
+            <div class="row">
+                <div class="testimony">
+                    <figure class="testimony__shape">
+                        <img src="img/mom.png" alt="Picture with mom" class="testimony__img">
+                        <figcaption class="testimony__caption">My Mom</figcaption>
+                    </figure>
+                    <div class="testimony__text">
+                        <h3 class="testimony__text__title">Barış was a nice kid</h3>
+                        <p class="testimony__text__paragraph">
+                            Barış had a huge curiosity. I remember he was making small experiments in the house when he was just 4.
+                            In the school, he was good at math and languages, but overall he was a lovely kid.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="testimony">
+                    <figure class="testimony__shape">
+                        <img src="img/friend.png" alt="Picture with mom" class="testimony__img">
+                        <figcaption class="testimony__caption">My Friend</figcaption>
+                    </figure>
+                    <div class="testimony__text">
+                        <h3 class="testimony__text__title">Cool.</h3>
+                        <p class="testimony__text__paragraph">
+                            Barış is cool.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="testimony">
+                    <figure class="testimony__shape">
+                        <img src="img/teacher.png" alt="Picture with mom" class="testimony__img">
+                        <figcaption class="testimony__caption">My Teacher</figcaption>
+                    </figure>
+                    <div class="testimony__text">
+                        <h3 class="testimony__text__title">How can I tell..</h3>
+                        <p class="testimony__text__paragraph">
+                            Barış loved playing games and didn't actually quite listened classes but he mostly got all the things I said.
+                            To be honest I don't remember that much, Barış wanted me to say few words (silently disappears..)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section-projects" id="section-projects">
+            <div class="black-title-container u-margin-bottom-small">
+                <h1 class="black-title-container__title">My projects</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <h3 class="card__side--front__title">Youtube Predictor</h3>
+                            <p class="card__side--front__paragraph">
+                                A machine learning project, I took my youtube data and especially when I watch youtube videos in that data,
+                                then I trained a machine learning model to predict when will I watch youtube videos in the future. My model is able
+                                to predict 84% of when will I watch youtube videos. 
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <h3 class="card__side--back__title">Used Tech</h3>
+                            <ul class="card__side--back__list">
+                                <li class="card__side--back__item">Python</li>
+                                <li class="card__side--back__item">Pandas</li>
+                                <li class="card__side--back__item">Matplotlib</li>
+                                <li class="card__side--back__item">Seaborn</li>
+                                <li class="card__side--back__item">Scikit Learn</li>
+                            </ul>
+                            <a href="https://www.kaggle.com/barisbll/personal-youtube-watch-history-s-data-analysis" target="_blank" class="card__side--back__btn">See It Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <h3 class="card__side--front__title">Project 02</h3>
+                            <p class="card__side--front__paragraph">
+                                Coming Soon!
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <h3 class="card__side--back__title">Used Tech</h3>
+                            <ul class="card__side--back__list">
+                                <li class="card__side--back__item">Tech 1</li>
+                                <li class="card__side--back__item">Tech 2</li>
+                                <li class="card__side--back__item">Tech 3</li>
+                                <li class="card__side--back__item">Tech 4</li>
+                                <li class="card__side--back__item">Tech 5</li>
+                            </ul>
+                            <a href="#" class="card__side--back__btn">See It Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <h3 class="card__side--front__title">Project 03</h3>
+                            <p class="card__side--front__paragraph">
+                                Coming Soon!
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <h3 class="card__side--back__title">Used Tech</h3>
+                            <ul class="card__side--back__list">
+                                <li class="card__side--back__item">Tech 1</li>
+                                <li class="card__side--back__item">Tech 2</li>
+                                <li class="card__side--back__item">Tech 3</li>
+                                <li class="card__side--back__item">Tech 4</li>
+                                <li class="card__side--back__item">Tech 5</li>
+                            </ul>
+                            <a href="#" class="card__side--back__btn">See It Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-btn-background-effect">
+                <a href="#" class="btn-background-effect">See More!</a>
+            </div>
+        </div>
+        </section>
+
+        <section class="section-book" id="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+
+                            <div class="black-title-container u-margin-bottom-small">
+                                <h1 class="black-title-container__title">Talk To Me</h1>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea id="textarea" class="form__text-area" placeholder="Your Message" required></textarea>
+                                <label for="textarea" class="form__label form__label__text-area">Your Message</label>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="form__btn">Send It</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="footer" id="section-contact">
+
+        <div class="footer__row">
+            
+            <div class="footer__col-1-of-4">
+                <a href="https://github.com/barisbll" class="icon-link" target="_blank"><i class="github icon"></i></a>
+            </div>
+            <div class="footer__col-1-of-4">
+                <a href="https://www.kaggle.com/barisbll" class="icon-link" target="_blank"><i class="kaggle icon"></i></a>
+            </div>
+            <div class="footer__col-1-of-4">
+                <a href="https://twitter.com/barisbll_dev" class="icon-link" target="_blank"><i class="twitter icon"></i></a>
+            </div>
+            <div class="footer__col-1-of-4">
+                <a href="https://www.linkedin.com/in/barisbll-dev/" class="icon-link" target="_blank"><i class="linkedin icon"></i></a>
+            </div>
+            
+        </div>
+
+        <div class="footer__box">
+            <h3 class="footer__box__title">Built by Barış BALLI</h3>
+            <p class="footer__box__paragraph">Copyrights &copy; Barış BALLI</p>
+        </div>
+    </footer>
 </body>
 </html>

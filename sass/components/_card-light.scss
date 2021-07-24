@@ -1,0 +1,58 @@
+.card-light {
+    //height: 52rem;
+    border:3px solid black;
+    background-color: $color-white;
+    transition: all .2s ease;
+    position: relative;
+    
+
+    &__header {
+
+        text-align: center;
+        margin-top: 3rem;
+
+        &__icon {
+            margin-bottom: 1.5rem;
+            font-size: 7rem;
+        }
+
+        &__title {
+            font-size: 2.7rem;
+        }
+
+        &__paragraph {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__list {
+        
+        margin-top: 3rem;
+
+        &__ul {
+
+            text-align: center;
+            &__item {
+                font-size: 3rem;
+                list-style: none;
+                padding: .5rem;
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1) translateY(-1rem);
+        z-index: 2;
+    }
+
+}
+
+
+.col-1-of-3-united:nth-child(2) .card-light {
+    margin-top: -2rem;
+}
+
+.card-light-container:hover .card-light:not(:hover) {
+    transform: scale(.95);
+    
+}

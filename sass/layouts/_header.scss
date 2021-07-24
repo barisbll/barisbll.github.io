@@ -1,0 +1,99 @@
+.header {
+
+    position: relative;
+    margin-top: 7rem;
+
+    @include respond(tab-port) {
+        margin: 0;
+        margin-top: 5.5rem;
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+
+    @include respond(phone) {
+        margin-top: 0;
+    }
+
+    @include respond(phone-mini) {
+        height: 120vh;
+    }
+
+    &__container {
+
+        &__title {
+
+        }
+
+        &__paragraph {
+            margin-top: 3rem;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        animation: leftToRight .4s ease;
+        transition: all .2s ease;
+
+        &:hover {
+            transform: rotate(-5deg) scale(1.1);
+        }
+    }
+
+    &__span {
+        display: block;
+        font-size: 8rem;
+
+        @include respond(tab-port) {
+            font-size: 8rem;
+        }
+
+        @include respond(phone) {
+            font-size: 8rem;
+        }
+
+        @include respond(big-screen) {
+            font-size: 20rem;
+        }
+    }
+
+    &__paragraph {
+        font-size: 4rem;
+        animation: rightToLeft .4s ease;
+
+        @include respond(tab-port) {
+            font-size: 6rem;
+            text-align: center;
+        }
+
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+
+        @include respond(big-screen) {
+            font-size: 6rem;
+        }
+    }
+
+    &__btn {
+        animation: bottomToTop .6s ease .5s;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            font-size: 7rem;
+        }
+
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+
+        @include respond(big-screen) {
+            font-size: 8rem;
+        }
+    }
+    
+}

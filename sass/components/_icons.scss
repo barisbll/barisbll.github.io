@@ -1,0 +1,80 @@
+.icon-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-white;
+      float: left;
+      font-size: 8rem;
+      margin-top: 5rem;
+      transition: all .2s ease;
+    }
+    
+    &:not(:last-child) {
+      margin-right: 12rem;
+      
+    }
+
+    &:hover {
+      transform: scale(1.2) translateY(-1rem) rotate(8deg);
+    }
+
+    
+}
+
+
+
+.github { 
+    @extend %fa-icon; 
+    @extend .fab; 
+    &:before { 
+      content: fa-content($fa-var-github); 
+    } 
+  } 
+
+.kaggle { 
+    @extend %fa-icon; 
+    @extend .fab; 
+    &:before { 
+      content: fa-content($fa-var-kaggle); 
+    } 
+} 
+
+.twitter { 
+    @extend %fa-icon; 
+    @extend .fab; 
+    &:before { 
+      content: fa-content($fa-var-twitter); 
+    } 
+} 
+
+.linkedin { 
+    @extend %fa-icon; 
+    @extend .fab; 
+    &:before { 
+      content: fa-content($fa-var-linkedin); 
+    } 
+} 
+
+.code { 
+  @extend %fa-icon; 
+  @extend .fas; 
+  &:before { 
+    content: fa-content($fa-var-code); 
+  } 
+} 
+
+.react { 
+  @extend %fa-icon; 
+  @extend .fab; 
+  &:before { 
+    content: fa-content($fa-var-react); 
+  } 
+} 
+
+.language { 
+  @extend %fa-icon; 
+  @extend .fas; 
+  &:before { 
+    content: fa-content($fa-var-language); 
+  } 
+} 
