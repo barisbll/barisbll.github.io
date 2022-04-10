@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
+    <script src="./index.js" defer></script>
     <title>Barisbll</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
         <div class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
-                <li class="navigation__item"><a href="#section-testimonies" class="navigation__link">Testimonies</a></li>
+                <!-- <li class="navigation__item"><a href="#section-testimonies" class="navigation__link">Testimonies</a></li> -->
                 <li class="navigation__item"><a href="#section-projects" class="navigation__link">Projects</a></li>
-                <li class="navigation__item"><a href="#section-book" class="navigation__link">Send a Mail</a></li>
+                <!-- <li class="navigation__item"><a href="#section-book" class="navigation__link">Send a Mail</a></li> -->
                 <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
             </ul>
         </div>
@@ -70,18 +71,18 @@
                     <div class="card-light">
                         <div class="card-light__header">
                             <i class="code card-light__header__icon"></i>
-                            <h3 class="card-light__header__title">Software Engineering</h3>
+                            <h3 class="card-light__header__title">Back-end Development</h3>
                             <p class="card-light__header__paragraph u-margin-top-mini">
-                                I learned Software Engineering at school. I had lessons for all computer science paths, and I made a lot of projects while studying. from linux to AI and from mobile development to databases. 
+                                I learned Back-end Development myself from online resources. I studied it during my holidays (Christmas break, summer break). Not only that, but I made many projects during this limited time. 
                             </p>
                         </div>
                         <div class="card-light__list">
                             <ul class="card-light__list__ul">
-                                <li class="card-light__list__ul__item">Phyton</li>
-                                <li class="card-light__list__ul__item">Linux</li>
-                                <li class="card-light__list__ul__item">Sql</li>
-                                <li class="card-light__list__ul__item">Machine Learning</li>
-                                <li class="card-light__list__ul__item">Java OOP</li>
+                                <li class="card-light__list__ul__item">Node.js & Express.js</li>
+                                <li class="card-light__list__ul__item">MongoDB & ODM & Mongoose</li>
+                                <li class="card-light__list__ul__item">Mysql & ORM & Sequalize</li>
+                                <li class="card-light__list__ul__item">Authentication & MVC</li>
+                                <li class="card-light__list__ul__item">Deployment</li>
                             </ul>
                         </div>
                     </div>
@@ -92,15 +93,15 @@
                             <i class="react card-light__header__icon"></i>
                             <h3 class="card-light__header__title">Front-end Development</h3>
                             <p class="card-light__header__paragraph u-margin-top-mini">
-                                I learned Front-end Development myself from many online sources. I studied it during my holidays (Christmas break, summer break). Not only that, but I made many projects during this limited time.
+                                I learned Front-end Development myself from many online sources. I studied it during my holidays just like Back-end (Christmas break, summer break). 
                             </p>
                         </div>
                         <div class="card-light__list">
                             <ul class="card-light__list__ul">
-                                <li class="card-light__list__ul__item">Html/CSS</li>
-                                <li class="card-light__list__ul__item">Javascript</li>
-                                <li class="card-light__list__ul__item">Sass</li>
-                                <li class="card-light__list__ul__item">React & Redux</li>
+                                <li class="card-light__list__ul__item">Html/CSS & SASS</li>
+                                <li class="card-light__list__ul__item">Javascript & Typescript</li>
+                                <li class="card-light__list__ul__item">React & Redux & Next.js</li>
+                                <li class="card-light__list__ul__item">React Native</li>
                                 <li class="card-light__list__ul__item">Git</li>
                             </ul>
                         </div>
@@ -129,7 +130,7 @@
             </div> 
         </section>
 
-        <section class="section-testimonies" id="section-testimonies">
+        <!-- <section class="section-testimonies" id="section-testimonies">
             
             <div class="black-title-container u-margin-bottom-small">
                 <h1 class="black-title-container__title">Testimonies</h1>
@@ -182,7 +183,7 @@
                 </div>
             </div>
             
-        </section>
+        </section> -->
 
         <section class="section-projects" id="section-projects">
             <div class="black-title-container u-margin-bottom-small">
@@ -216,21 +217,21 @@
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card__side card__side--front">
-                            <h3 class="card__side--front__title">Project 02</h3>
+                            <h3 class="card__side--front__title">Slownik PWR</h3>
                             <p class="card__side--front__paragraph">
-                                Coming Soon!
+                                A social media application for Wrocław University of Science and Technology
                             </p>
                         </div>
                         <div class="card__side card__side--back">
                             <h3 class="card__side--back__title">Used Tech</h3>
                             <ul class="card__side--back__list">
-                                <li class="card__side--back__item">Tech 1</li>
-                                <li class="card__side--back__item">Tech 2</li>
-                                <li class="card__side--back__item">Tech 3</li>
-                                <li class="card__side--back__item">Tech 4</li>
-                                <li class="card__side--back__item">Tech 5</li>
+                                <li class="card__side--back__item">Next.js</li>
+                                <li class="card__side--back__item">React.js</li>
+                                <li class="card__side--back__item">Node.js</li>
+                                <li class="card__side--back__item">Express.js</li>
+                                <li class="card__side--back__item">MongoDB - Mongoose</li>
                             </ul>
-                            <a href="#" class="card__side--back__btn">See It Now!</a>
+                            <a href="https://github.com/barisbll/slownik-pwr-backend" target="_blank" class="card__side--back__btn">See It Now!</a>
                         </div>
                     </div>
                 </div>
@@ -258,12 +259,12 @@
             </div>
 
             <div class="container-btn-background-effect">
-                <a href="#" class="btn-background-effect">See More!</a>
+                <a href="https://github.com/barisbll?tab=repositories" target="_blank" class="btn-background-effect">See More!</a>
             </div>
         </div>
         </section>
 
-        <section class="section-book" id="section-book">
+        <!-- <section class="section-book" id="section-book">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
@@ -293,7 +294,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     
     </main>
 
